@@ -6,7 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 
-public class OpenPage {
+public class LoginPage {
 	public static void main(String[] args) {
 		WebDriver d = new ChromeDriver();
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -26,7 +26,18 @@ public class OpenPage {
 		By submit = By.xpath("//button[@type='submit']");
 		WebElement click_submit = d.findElement(submit);
 		click_submit.submit();
+
+		String act = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
+		if(act.equals(d.getCurrentUrl()))
+		{
+			System.out.println("Login Successful");
+		}
+		else
+		{
+			System.out.println("Login Failed");
+		}
 		
 		d.quit();
+		
 	}
 }
