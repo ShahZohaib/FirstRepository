@@ -26,7 +26,7 @@ public class First_Test {
 	@AfterMethod
 	public void aftetest_Method()
 	{
-		System.out.println("After Method");
+		System.out.println("After Method.");
 	}
 	
 	
