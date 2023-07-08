@@ -11,7 +11,7 @@ public class First_Test {
 	}
 	public static void main(String[] args) {
 		int a=10,b=20;
-		System.out.println(a+b);
+		System.out.println("Addition of Two Numbers: "+(a+b));
 		test_Method1();
 		test_Method2();
 	}
