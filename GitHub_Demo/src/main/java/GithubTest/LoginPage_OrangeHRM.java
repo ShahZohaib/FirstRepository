@@ -11,7 +11,7 @@ public class LoginPage_OrangeHRM {
 	WebDriver d = new ChromeDriver();
 	@BeforeMethod
 	public void OpenLoginPage()
-	{	
+	{  	
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		d.manage().window().maximize();
@@ -42,6 +42,7 @@ public class LoginPage_OrangeHRM {
 		{
 			System.out.println("Login Failed");
 		}
+		System.out.println("Login Details Entered Successfully");
 
 	}
 		@AfterMethod
