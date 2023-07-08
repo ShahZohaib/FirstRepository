@@ -43,7 +43,6 @@ public class LoginPage_OrangeHRM {
 			System.out.println("Login Failed");
 		}
 		System.out.println("Login Details Entered Successfully");
-
 	}
 		@AfterMethod
 		public void close_page()
