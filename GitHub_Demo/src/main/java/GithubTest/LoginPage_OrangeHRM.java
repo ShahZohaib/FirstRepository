@@ -1,19 +1,24 @@
 package GithubTest;
 
 import java.time.Duration;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
+import org.testng.annotations.*;
 
 public class LoginPage_OrangeHRM {
-
-	public static void main(String[] args) {
-		WebDriver d = new ChromeDriver();
+	
+	WebDriver d = new ChromeDriver();
+	@BeforeMethod
+	public void OpenLoginPage()
+	{	
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		d.manage().window().maximize();
-		
+	}
+	@Test
+	public void EnterLoginDetails()
+	{
 		By login =By.xpath("//input[@name='username']");
 		WebElement login_data = d.findElement(login);
 		login_data.click();
@@ -37,8 +42,15 @@ public class LoginPage_OrangeHRM {
 		{
 			System.out.println("Login Failed");
 		}
-		
-		d.quit();
-		
+
 	}
+		@AfterMethod
+		public void close_page()
+		{
+			d.quit();
+		}
+				
+		
+		
+	
 }
