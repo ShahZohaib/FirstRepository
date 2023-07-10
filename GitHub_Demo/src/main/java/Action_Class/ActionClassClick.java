@@ -24,6 +24,6 @@ public class ActionClassClick
 		//click.click();
 		a.doubleClick(click).perform();
 		a.contextClick(click).perform();
-		
+		d.close();
 	}
 }

@@ -24,5 +24,6 @@ public static void main(String[] args) {
 	WebElement click_drop = d.findElement(drop);
 	
 	a.dragAndDrop(click_drag, click_drop).perform();
+	d.close();
 }
 }
