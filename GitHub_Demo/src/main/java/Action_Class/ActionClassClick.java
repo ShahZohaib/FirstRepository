@@ -13,6 +13,7 @@ public class ActionClassClick
 	public static void main(String[] args) 
 	{
 		WebDriver d = new ChromeDriver();
+		Actions a = new Actions(d);
 		
 		d.get("https://mousetester.com");
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -20,7 +21,7 @@ public class ActionClassClick
 		
 		By click_mouse= By.xpath("//div[@id=\"clickMe\"]");
 		WebElement click = d.findElement(click_mouse);
-		Actions a = new Actions(d);
+		
 		//click.click();
 		a.doubleClick(click).perform();
 		a.contextClick(click).perform();
