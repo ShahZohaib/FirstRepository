@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-08T17:06:42 IST" name="Default suite" finished-at="2023-07-08T17:06:54 IST" duration-ms="11823">
+  <suite started-at="2023-07-10T13:14:33 IST" name="Default suite" finished-at="2023-07-10T13:14:48 IST" duration-ms="14724">
     <groups>
     </groups>
-    <test started-at="2023-07-08T17:06:42 IST" name="Default test" finished-at="2023-07-08T17:06:54 IST" duration-ms="11823">
-      <class name="GithubTest.LoginPage_OrangeHRM">
-        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:GithubTest.LoginPage_OrangeHRM@4d48bd85]" started-at="2023-07-08T17:06:42 IST" name="OpenLoginPage" finished-at="2023-07-08T17:06:52 IST" duration-ms="9649" status="PASS">
+    <test started-at="2023-07-10T13:14:33 IST" name="Default test" finished-at="2023-07-10T13:14:48 IST" duration-ms="14724">
+      <class name="QAFOX_Project.LoginPageTestClass">
+        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:QAFOX_Project.LoginPageTestClass@6c1a5b54]" started-at="2023-07-10T13:14:33 IST" name="OpenLoginPage" finished-at="2023-07-10T13:14:41 IST" duration-ms="8211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenLoginPage -->
-        <test-method signature="EnterLoginDetails()[pri:0, instance:GithubTest.LoginPage_OrangeHRM@4d48bd85]" started-at="2023-07-08T17:06:52 IST" name="EnterLoginDetails" finished-at="2023-07-08T17:06:54 IST" duration-ms="1979" status="PASS">
+        <test-method signature="Login_and_validate_components()[pri:0, instance:QAFOX_Project.LoginPageTestClass@6c1a5b54]" started-at="2023-07-10T13:14:41 IST" name="Login_and_validate_components" finished-at="2023-07-10T13:14:48 IST" duration-ms="6459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnterLoginDetails -->
-        <test-method is-config="true" signature="close_page()[pri:0, instance:GithubTest.LoginPage_OrangeHRM@4d48bd85]" started-at="2023-07-08T17:06:54 IST" name="close_page" finished-at="2023-07-08T17:06:54 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close_page -->
-      </class> <!-- GithubTest.LoginPage_OrangeHRM -->
+        </test-method> <!-- Login_and_validate_components -->
+      </class> <!-- QAFOX_Project.LoginPageTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

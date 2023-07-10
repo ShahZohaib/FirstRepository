@@ -8,7 +8,7 @@ public class RegistrationPage extends DriverClass{
 	private static By last_name = By.xpath("//input[@name='lastname']");
 	private static By email = By.xpath("//input[@name='email']");
 	private static By telephone = By.xpath("//input[@name='telephone']");
-	private static By password = By.xpath("//input[@name='password']");
+	private static By password = By.xpath("//input[@id='input-password']");
 	private static By confirm_pass = By.xpath("//input[@name='confirm']");
 	private static By check_box = By.xpath("//input[@type='checkbox']");
 	private static By submit = By.xpath("//input[@type='submit']");
@@ -72,17 +72,19 @@ public class RegistrationPage extends DriverClass{
 	}
 	public static void enter_pass(String password)
 	{
-		click_on_password().click();		
+		click_on_password().click();	
+		click_on_password().sendKeys(password);
 	}
 	public static void enter_pass_again(String password)
 	{
-		click_on_confirm_pass().click();		
+		click_on_confirm_pass().click();	
+		click_on_confirm_pass().sendKeys(password);
 	}
 	public static void select_checkbox()
 	{
 		click_on_checkbox().click();
 	}
-	public static void Click_on_Submit_box()
+	public static void Click_on_continue_box()
 	{
 		click_on_submit().click();
 	}
