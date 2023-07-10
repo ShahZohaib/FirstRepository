@@ -15,8 +15,7 @@ public class JavaScriptExecutorClass {
 	
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
-		d.manage().window().maximize();
-		
+		d.manage().window().maximize();		
 		d.get("https://www.amazon.in/");
 		
 		By amazon = By.xpath("//input[@id='twotabsearchtextbox']");		
@@ -30,7 +29,7 @@ public class JavaScriptExecutorClass {
 		JavascriptExecutor js = (JavascriptExecutor) d;
 		js.executeScript("window.scrollBy(0,450)", "");
 		
-		By sel_shoe = By.xpath("//img[@alt='ASIAN Men's Wonder-13 Sports Running Shoes']");
+		By sel_shoe = By.xpath("//img[@alt=\"ASIAN Men's Wonder-13 Sports Running Shoes\"]");
 		WebElement click_shoe = d.findElement(sel_shoe);
 		click_shoe.click();
 		d.close();
