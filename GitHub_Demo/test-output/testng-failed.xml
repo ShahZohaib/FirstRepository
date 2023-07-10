@@ -6,6 +6,8 @@
       <class name="QAFOX_Project.LoginPageTestClass">
         <methods>
           <include name="OpenLoginPage"/>
+          <include name="Enter_LoginDetails"/>
+          <include name="logout"/>
           <include name="Login_and_validate_components"/>
         </methods>
       </class> <!-- QAFOX_Project.LoginPageTestClass -->

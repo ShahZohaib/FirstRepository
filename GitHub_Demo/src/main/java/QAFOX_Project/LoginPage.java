@@ -18,6 +18,9 @@ public class LoginPage extends DriverClass
 	private static By add_to_cart = By.xpath("//button[@onclick=\"cart.add('33', '1');\"]//span[text()='Add to Cart']");
 	private static By cart_items = By.xpath("//button[@type='button']//span[@id='cart-total']");
 	private static By view_cart = By.xpath("//strong[text()='View Cart']");
+	private static By my_account = By.xpath("//span[text()='My Account']");
+	private static By logout =By.xpath("//a[text()='Logout']");
+	
 ///WebElement Methods	
 	public static WebElement Click_On_Email_Box()
 	{
@@ -42,8 +45,7 @@ public class LoginPage extends DriverClass
     {
      return d.findElement(components);
     }
-    
-    
+   
     public static WebElement select_monitor()
     {
     	return d.findElement(monitors);
@@ -66,6 +68,14 @@ public class LoginPage extends DriverClass
     	return d.findElement(view_cart);
     }
     
+    public static WebElement Go_to_MyAccount()
+	{
+		return d.findElement(my_account);
+	}
+    public static WebElement go_to_logout()
+    {
+    	return d.findElement(logout);
+    }
 ////Actions	
 	public static void Enter_Email_id(String mail)
 	{
@@ -110,5 +120,12 @@ public class LoginPage extends DriverClass
 	 {
 		 go_to_view_cart().click();
 	 }
-
+	 public static void click_on_myaccount()
+	 {
+		 Go_to_MyAccount().click();
+	 }
+	 public static void click_on_logout()
+	 {
+		 go_to_logout().click();
+	 }
 }

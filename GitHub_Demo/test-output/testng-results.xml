@@ -2,19 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T13:14:33 IST" name="Default suite" finished-at="2023-07-10T13:14:48 IST" duration-ms="14724">
+  <suite started-at="2023-07-10T15:17:21 IST" name="Default suite" finished-at="2023-07-10T15:17:34 IST" duration-ms="12927">
     <groups>
     </groups>
-    <test started-at="2023-07-10T13:14:33 IST" name="Default test" finished-at="2023-07-10T13:14:48 IST" duration-ms="14724">
+    <test started-at="2023-07-10T15:17:21 IST" name="Default test" finished-at="2023-07-10T15:17:34 IST" duration-ms="12927">
       <class name="QAFOX_Project.LoginPageTestClass">
-        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:QAFOX_Project.LoginPageTestClass@6c1a5b54]" started-at="2023-07-10T13:14:33 IST" name="OpenLoginPage" finished-at="2023-07-10T13:14:41 IST" duration-ms="8211" status="PASS">
+        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:QAFOX_Project.LoginPageTestClass@54422e18]" started-at="2023-07-10T15:17:21 IST" name="OpenLoginPage" finished-at="2023-07-10T15:17:27 IST" duration-ms="5523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenLoginPage -->
-        <test-method signature="Login_and_validate_components()[pri:0, instance:QAFOX_Project.LoginPageTestClass@6c1a5b54]" started-at="2023-07-10T13:14:41 IST" name="Login_and_validate_components" finished-at="2023-07-10T13:14:48 IST" duration-ms="6459" status="PASS">
+        <test-method is-config="true" signature="Enter_LoginDetails()[pri:0, instance:QAFOX_Project.LoginPageTestClass@54422e18]" started-at="2023-07-10T15:17:27 IST" name="Enter_LoginDetails" finished-at="2023-07-10T15:17:28 IST" duration-ms="1055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_LoginDetails -->
+        <test-method signature="Login_and_validate_components()[pri:0, instance:QAFOX_Project.LoginPageTestClass@54422e18]" started-at="2023-07-10T15:17:28 IST" name="Login_and_validate_components" finished-at="2023-07-10T15:17:33 IST" duration-ms="5116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_and_validate_components -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:QAFOX_Project.LoginPageTestClass@54422e18]" started-at="2023-07-10T15:17:33 IST" name="logout" finished-at="2023-07-10T15:17:34 IST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:QAFOX_Project.LoginPageTestClass@54422e18]" started-at="2023-07-10T15:17:34 IST" name="closewindow" finished-at="2023-07-10T15:17:34 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closewindow -->
       </class> <!-- QAFOX_Project.LoginPageTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
