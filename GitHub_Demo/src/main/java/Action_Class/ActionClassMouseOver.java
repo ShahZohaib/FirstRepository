@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class ActionClassMouseOver {
+	
 	public static void main(String[] args) 
 	{
 		WebDriver d = new ChromeDriver();
@@ -22,8 +23,7 @@ public class ActionClassMouseOver {
 		
 		By ebook = By.xpath("//li[@class=\"sub-menu-title menu-title-row pt-2 pb-2\"]//a[text()='eBooks']");
 		WebElement e = d.findElement(ebook);
-		
-		
+			
 		a.moveToElement(r).perform();
 		a.click(e).perform();
 		a.doubleClick(e).perform();
