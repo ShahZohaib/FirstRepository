@@ -26,7 +26,7 @@ public class ActionClassMouseOver {
 			
 		a.moveToElement(r).perform();
 		a.click(e).perform();
-		a.doubleClick(e).perform();
+		
 	
 		d.close();
 	}
