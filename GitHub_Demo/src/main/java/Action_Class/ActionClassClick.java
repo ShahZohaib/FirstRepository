@@ -7,14 +7,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Main.DriverClass;
 
 public class ActionClassClick extends DriverClass
 {
-	public static void main(String[] args) 
+	@BeforeMethod
+	public void OpenPage()
 	{
 		driver("https://mousetester.com");
+	}
+	@Test
+	public static void action_click() 
+	{
+		
 		Actions a = new Actions(d);
 		
 		
@@ -24,7 +33,11 @@ public class ActionClassClick extends DriverClass
 		//click.click();
 		a.doubleClick(click).perform();
 		a.contextClick(click).perform();
-		d.close();
 		
+	}
+	@AfterMethod
+	public void close_page()
+	{
+		d.close();
 	}
 }
