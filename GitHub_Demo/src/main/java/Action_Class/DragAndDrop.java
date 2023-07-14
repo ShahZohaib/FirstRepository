@@ -12,7 +12,7 @@ import Main.DriverClass;
 public class DragAndDrop extends DriverClass{
 public static void main(String[] args) {
 	
-	DriverClass.driver("https://demoqa.com/droppable/");
+	driver("https://demoqa.com/droppable/");
 	Actions a = new Actions(d);
 	By drag = By.xpath("//div[@id='draggable']");
 	WebElement click_drag = d.findElement(drag);
