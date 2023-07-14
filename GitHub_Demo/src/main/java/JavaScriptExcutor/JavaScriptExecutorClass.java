@@ -1,22 +1,15 @@
 package JavaScriptExcutor;
-
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Main.DriverClass;
 
 
-public class JavaScriptExecutorClass {
-	public static void main(String[] args) {
-		WebDriver d = new ChromeDriver();
-	
-		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+public class JavaScriptExecutorClass extends DriverClass{
+	public static void main(String[] args) 
+	{
 		
-		d.manage().window().maximize();		
-		d.get("https://www.amazon.in/");
+		driver("https://www.amazon.in/");
 		
 		By amazon = By.xpath("//input[@id='twotabsearchtextbox']");		
 		WebElement deal = d.findElement(amazon);		
@@ -28,6 +21,7 @@ public class JavaScriptExecutorClass {
 		
 		JavascriptExecutor js = (JavascriptExecutor) d;
 		js.executeScript("window.scrollBy(0,450)", "");
+		
 		
 		By sel_shoe = By.xpath("//img[@alt=\"ASIAN Men's Wonder-13 Sports Running Shoes\"]");
 		WebElement click_shoe = d.findElement(sel_shoe);
