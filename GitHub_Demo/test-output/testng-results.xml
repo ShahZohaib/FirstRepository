@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T15:35:48 IST" name="Default suite" finished-at="2023-07-14T15:35:59 IST" duration-ms="10680">
+  <suite started-at="2023-07-14T17:28:37 IST" name="Default suite" finished-at="2023-07-14T17:28:54 IST" duration-ms="16841">
     <groups>
     </groups>
-    <test started-at="2023-07-14T15:35:48 IST" name="Default test" finished-at="2023-07-14T15:35:59 IST" duration-ms="10680">
-      <class name="JavaScriptExcutor.JavaScriptExecutorClass">
-        <test-method is-config="true" signature="OpenPage()[pri:0, instance:JavaScriptExcutor.JavaScriptExecutorClass@3c77d488]" started-at="2023-07-14T15:35:48 IST" name="OpenPage" finished-at="2023-07-14T15:35:55 IST" duration-ms="6225" status="PASS">
+    <test started-at="2023-07-14T17:28:37 IST" name="Default test" finished-at="2023-07-14T17:28:54 IST" duration-ms="16841">
+      <class name="Action_Class.SortElements">
+        <test-method is-config="true" signature="OpenPage()[pri:0, instance:Action_Class.SortElements@71ba6d4e]" started-at="2023-07-14T17:28:37 IST" name="OpenPage" finished-at="2023-07-14T17:28:54 IST" duration-ms="16614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenPage -->
-        <test-method signature="javascript_executor()[pri:0, instance:JavaScriptExcutor.JavaScriptExecutorClass@3c77d488]" started-at="2023-07-14T15:35:55 IST" name="javascript_executor" finished-at="2023-07-14T15:35:59 IST" duration-ms="4177" status="PASS">
+        <test-method signature="Elements()[pri:0, instance:Action_Class.SortElements@71ba6d4e]" started-at="2023-07-14T17:28:54 IST" name="Elements" finished-at="2023-07-14T17:28:54 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- javascript_executor -->
-        <test-method is-config="true" signature="close_page()[pri:0, instance:JavaScriptExcutor.JavaScriptExecutorClass@3c77d488]" started-at="2023-07-14T15:35:59 IST" name="close_page" finished-at="2023-07-14T15:35:59 IST" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close_page -->
-      </class> <!-- JavaScriptExcutor.JavaScriptExecutorClass -->
+        </test-method> <!-- Elements -->
+      </class> <!-- Action_Class.SortElements -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
