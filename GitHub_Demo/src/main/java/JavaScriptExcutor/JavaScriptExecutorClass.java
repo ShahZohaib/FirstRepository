@@ -8,7 +8,6 @@ import Main.DriverClass;
 public class JavaScriptExecutorClass extends DriverClass{
 	public static void main(String[] args) 
 	{
-		
 		driver("https://www.amazon.in/");
 		
 		By amazon = By.xpath("//input[@id='twotabsearchtextbox']");		
