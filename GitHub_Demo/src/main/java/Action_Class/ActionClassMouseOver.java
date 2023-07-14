@@ -3,14 +3,22 @@ package Action_Class;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Main.DriverClass;
 
 public class ActionClassMouseOver extends DriverClass{
-	
-	public static void main(String[] args) 
+	@BeforeMethod
+	public void OpenPage()
 	{
-	    driver("https://www.orangehrm.com/");
+		 driver("https://www.orangehrm.com/");
+	}
+	@Test
+	public static void mouseover() 
+	{
+	   
 		Actions a = new Actions(d);
 		By res = By.xpath("//a[text()='Resources']");
 		WebElement r = d.findElement(res);
@@ -22,6 +30,11 @@ public class ActionClassMouseOver extends DriverClass{
 		a.click(e).perform();
 		
 	
+		
+	}
+	@AfterMethod
+	public void close_page()
+	{
 		d.close();
 	}
 }

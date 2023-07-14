@@ -2,13 +2,23 @@ package JavaScriptExcutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.*;
+
 import Main.DriverClass;
 
 
 public class JavaScriptExecutorClass extends DriverClass{
-	public static void main(String[] args) 
+	
+	@BeforeMethod
+	public void OpenPage()
 	{
 		driver("https://www.amazon.in/");
+	}
+	
+	@Test
+	public static void javascript_executor() 
+	{
+		
 		
 		By amazon = By.xpath("//input[@id='twotabsearchtextbox']");		
 		WebElement deal = d.findElement(amazon);		
@@ -25,6 +35,11 @@ public class JavaScriptExecutorClass extends DriverClass{
 		By sel_shoe = By.xpath("//img[@alt=\"ASIAN Men's Wonder-13 Sports Running Shoes\"]");
 		WebElement click_shoe = d.findElement(sel_shoe);
 		click_shoe.click();
+		
+	}
+	@AfterMethod
+	public void close_page()
+	{
 		d.close();
 	}
 }
