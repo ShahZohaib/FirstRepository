@@ -31,5 +31,6 @@ public class Remove_Duplicates_in_Array {
 				System.out.println(c[k]);
 			}
 		}
+		sc.close();
 	}
 }
