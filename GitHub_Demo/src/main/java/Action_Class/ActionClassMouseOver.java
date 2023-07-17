@@ -17,8 +17,7 @@ public class ActionClassMouseOver extends DriverClass{
 	}
 	@Test
 	public static void mouseover() 
-	{
-	   
+	{   
 		Actions a = new Actions(d);
 		By res = By.xpath("//a[text()='Resources']");
 		WebElement r = d.findElement(res);
@@ -28,9 +27,6 @@ public class ActionClassMouseOver extends DriverClass{
 			
 		a.moveToElement(r).perform();
 		a.click(e).perform();
-		
-	
-		
 	}
 	@AfterMethod
 	public void close_page()
