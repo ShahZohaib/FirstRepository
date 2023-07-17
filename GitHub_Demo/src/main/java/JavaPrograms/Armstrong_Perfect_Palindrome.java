@@ -1,6 +1,6 @@
 package JavaPrograms;
 
-public class ARMSTRONG {
+public class Armstrong_Perfect_Palindrome{
 	 public static void main(String[] args) {
 		System.out.println("Armstrong,Palindrome,perfect numbers: ");
 		for(int i=1;i<=1000;i++)
