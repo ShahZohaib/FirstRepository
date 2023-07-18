@@ -12,6 +12,7 @@ import JavaScriptExcutor.JavaScriptExecutorClass;
 public class LoginPage extends DriverClass
 {
 	static Select s;
+	 static JavascriptExecutor js= (JavascriptExecutor)d;
 	
 	private static By email = By.xpath("//input[@id='input-email']");
 	private	static By password = By.xpath("//input[@id='input-password']");
@@ -22,7 +23,7 @@ public class LoginPage extends DriverClass
 	private static By select_class = By.xpath("//select[@id='input-sort']");
 	private static By laptop = By.xpath("//li//a[@class='dropdown-toggle' and text()='Laptops & Notebooks']");
 	private static By all_components = By.xpath("//li[@class='dropdown open']//div[@class='dropdown-menu']//ul//li");
-	private static By add_to_cart = By.xpath("//button[@onclick=\"cart.add('33', '1');\"]//span[text()='Add to Cart']");
+	private static By add_to_cart = By.xpath("//button[text()='Add to Cart']");
 	private static By cart_items = By.xpath("//button[@type='button']//span[@id='cart-total']");
 	private static By view_cart = By.xpath("//strong[text()='View Cart']");
 	private static By my_account = By.xpath("//span[text()='My Account']");
@@ -150,6 +151,7 @@ public class LoginPage extends DriverClass
 	    }
 	 public static void Click_AddTo_Cart()
 	 {
+		 js.executeScript("window.scrollBy(0,400)", "");
 		 select_add_to_cart().click();
 	 }
 	 public static void click_items()
@@ -184,12 +186,13 @@ public class LoginPage extends DriverClass
 		}
 	 public static void Select_item()
 	 {
-		 JavascriptExecutor js= (JavascriptExecutor)d;
+		
 		 js.executeScript("window.scrollBy(0,400)", "");
 		 Click_Item().click();
 	 }
 	 public static void Enter_Quantity(String num)
 	 {
+		 
 		 Select_Quantity().click();
 		 Select_Quantity().clear();
 		 Select_Quantity().sendKeys(num);
