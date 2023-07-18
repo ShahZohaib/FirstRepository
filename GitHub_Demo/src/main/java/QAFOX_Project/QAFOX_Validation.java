@@ -20,7 +20,7 @@ public class QAFOX_Validation {
 		}
 		else
 		{
-			System.out.println("Required Message is Displayed");
+			System.out.println(" Message is Displayed");
 		}
 	}
 	public static void Check_img_displayed(boolean b) throws Exception

@@ -1,6 +1,6 @@
 package QAFOX_Project;
 
-import org.openqa.selenium.JavascriptExecutor;
+ 
 import org.testng.annotations.*;
 
 public class ComponentPageTestClass 
@@ -36,7 +36,9 @@ public class ComponentPageTestClass
 		String actual_value = "2";
 		String exp_value=LoginPage.Select_Quantity().getAttribute("value");
 		QAFOX_Validation.check_equal(actual_value, exp_value);
-//		LoginPage.Click_AddTo_Cart();
+		
+		LoginPage.Click_AddTo_Cart();
+		QAFOX_Validation.Check_msg_displayed(LoginPage.success_msg().isDisplayed());
 //		Thread.sleep(3000);
 //		LoginPage.click_items();
 //		LoginPage.click_on_view_cart();
