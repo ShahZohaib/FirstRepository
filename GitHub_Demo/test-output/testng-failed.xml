@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Action_Class.moveelements">
+      <class name="QAFOX_Project.ComponentPageTestClass">
         <methods>
-          <include name="OpenPage"/>
-          <include name="drop_element"/>
+          <include name="Enter_LoginDetails"/>
+          <include name="Login_and_validate_components"/>
+          <include name="OpenLoginPage"/>
         </methods>
-      </class> <!-- Action_Class.moveelements -->
+      </class> <!-- QAFOX_Project.ComponentPageTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
