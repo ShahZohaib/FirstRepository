@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T17:28:37 IST" name="Default suite" finished-at="2023-07-14T17:28:54 IST" duration-ms="16841">
+  <suite started-at="2023-07-18T16:29:47 IST" name="Default suite" finished-at="2023-07-18T16:30:05 IST" duration-ms="18250">
     <groups>
     </groups>
-    <test started-at="2023-07-14T17:28:37 IST" name="Default test" finished-at="2023-07-14T17:28:54 IST" duration-ms="16841">
-      <class name="Action_Class.SortElements">
-        <test-method is-config="true" signature="OpenPage()[pri:0, instance:Action_Class.SortElements@71ba6d4e]" started-at="2023-07-14T17:28:37 IST" name="OpenPage" finished-at="2023-07-14T17:28:54 IST" duration-ms="16614" status="PASS">
+    <test started-at="2023-07-18T16:29:47 IST" name="Default test" finished-at="2023-07-18T16:30:05 IST" duration-ms="18250">
+      <class name="QAFOX_Project.ComponentPageTestClass">
+        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-18T16:29:47 IST" name="OpenLoginPage" finished-at="2023-07-18T16:29:57 IST" duration-ms="10151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenPage -->
-        <test-method signature="Elements()[pri:0, instance:Action_Class.SortElements@71ba6d4e]" started-at="2023-07-14T17:28:54 IST" name="Elements" finished-at="2023-07-14T17:28:54 IST" duration-ms="182" status="PASS">
+        </test-method> <!-- OpenLoginPage -->
+        <test-method is-config="true" signature="Enter_LoginDetails()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-18T16:29:57 IST" name="Enter_LoginDetails" finished-at="2023-07-18T16:29:58 IST" duration-ms="987" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Elements -->
-      </class> <!-- Action_Class.SortElements -->
+        </test-method> <!-- Enter_LoginDetails -->
+        <test-method signature="Login_and_validate_components()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-18T16:29:58 IST" name="Login_and_validate_components" finished-at="2023-07-18T16:30:05 IST" duration-ms="7061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_and_validate_components -->
+      </class> <!-- QAFOX_Project.ComponentPageTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
