@@ -7,7 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import JavaScriptExcutor.JavaScriptExecutorClass;
 import QAFOX_Project_Driver_PKG.DriverClass;
 
 public class LoginPage extends DriverClass
