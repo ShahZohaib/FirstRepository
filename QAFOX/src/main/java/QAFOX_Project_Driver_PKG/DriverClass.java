@@ -12,6 +12,6 @@ public class DriverClass {
 		d=new ChromeDriver();
 		d.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 		d.manage().window().maximize();
-		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 }
