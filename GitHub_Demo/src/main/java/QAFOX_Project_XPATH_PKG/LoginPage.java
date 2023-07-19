@@ -1,4 +1,4 @@
-package QAFOX_Project;
+package QAFOX_Project_XPATH_PKG;
 
 import java.util.List;
 
@@ -8,27 +8,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import JavaScriptExcutor.JavaScriptExecutorClass;
+import QAFOX_Project_Driver_PKG.DriverClass;
 
 public class LoginPage extends DriverClass
 {
 	static Select s;
-	 static JavascriptExecutor js= (JavascriptExecutor)d;
+	static JavascriptExecutor js= (JavascriptExecutor)d;
 	
 	private static By email = By.xpath("//input[@id='input-email']");
 	private	static By password = By.xpath("//input[@id='input-password']");
 	private	static By Login = By.xpath("//input[@type='submit']");
 	private	static By Invalid_or_Empty__Field = By.xpath("//div[text()='Warning: No match for E-Mail Address and/or Password.']");
-	private static By components = By.xpath("//a[@class='dropdown-toggle' and text()='Components']");
-	private static By monitors = By.xpath("//li//a[text()='Monitors (2)']");
+//	private static By components = By.xpath("//a[@class='dropdown-toggle' and text()='Components']");
+//	private static By monitors = By.xpath("//li//a[text()='Monitors (2)']");
 	private static By select_class = By.xpath("//select[@id='input-sort']");
-	private static By laptop = By.xpath("//li//a[@class='dropdown-toggle' and text()='Laptops & Notebooks']");
+//	private static By laptop = By.xpath("//li//a[@class='dropdown-toggle' and text()='Laptops & Notebooks']");
 	private static By all_components = By.xpath("//li[@class='dropdown open']//div[@class='dropdown-menu']//ul//li");
 	private static By add_to_cart = By.xpath("//button[text()='Add to Cart']");
 	private static By cart_items = By.xpath("//button[@type='button']//span[@id='cart-total']");
 	private static By view_cart = By.xpath("//strong[text()='View Cart']");
 	private static By my_account = By.xpath("//span[text()='My Account']");
 	private static By logout =By.xpath("//a[text()='Logout']");
-	private static By nav_bar = By.xpath("//div[@class=\"collapse navbar-collapse navbar-ex1-collapse\"]//ul");
+	private static By nav_bar = By.xpath("//ul[@class=\"nav navbar-nav\"]//li");
 	private static By monitos_text = By.xpath("//h2[text()='Monitors']");
 	private static By success = By.xpath("//div[text()='Success: You have added ']");
 	private static By item = By.xpath("//div[@class=\"caption\"]//a[text()='Samsung SyncMaster 941BW']");
@@ -61,17 +62,7 @@ public class LoginPage extends DriverClass
 	{
 		return d.findElement(Invalid_or_Empty__Field);
 	}
-	
-	public static WebElement Go_To_Component()
-    {
-     return d.findElement(components);
-    }
-   
-    public static WebElement select_monitor()
-    {
-    	return d.findElement(monitors);
-    }
-    
+
     public static WebElement select_box()
     {
     	return d.findElement(select_class);
@@ -117,6 +108,10 @@ public class LoginPage extends DriverClass
     {
     	return d.findElement(quantity);
     }
+    public static List<WebElement> all_nav_names()
+    {
+    	return d.findElements(nav_bar);
+    }
 //////////////////////////////////////Actions///////////////////////////////
 	public static void Enter_Email_id(String mail)
 	{
@@ -133,15 +128,9 @@ public class LoginPage extends DriverClass
 	{
 		Click_On_Login().submit();
 	}
-	 public static void Click_on_components()
-	    {
-		 Go_To_Component().click();
-	    }
+	
 	    
-	 public static void Click_on_monitors()
-	    {
-	    	select_monitor().click();
-	    }
+	
 	 
 	 public static void Click_on_select_Box(String text)
 	    {
@@ -197,5 +186,18 @@ public class LoginPage extends DriverClass
 		 Select_Quantity().clear();
 		 Select_Quantity().sendKeys(num);
 	 }
+	public static void Click_any_nav_element(String ele)
+	{
+		List<WebElement> li = all_nav_names();
+		for(WebElement e : li)
+		{
+			String s = e.getText();
+			if(ele.equals(s))
+			{
+		         e.click();
+		         break;
+			}
+		}
+	}
 	
 }
