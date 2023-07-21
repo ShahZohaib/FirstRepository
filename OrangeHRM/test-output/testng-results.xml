@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-21T18:23:09 IST" name="Default suite" finished-at="2023-07-21T18:23:35 IST" duration-ms="26604">
+    <groups>
+    </groups>
+    <test started-at="2023-07-21T18:23:09 IST" name="Default test" finished-at="2023-07-21T18:23:35 IST" duration-ms="26604">
+      <class name="OrangeHRM_TestPKG.TestClass">
+        <test-method is-config="true" signature="openpage()[pri:0, instance:OrangeHRM_TestPKG.TestClass@3e8c3cb]" started-at="2023-07-21T18:23:09 IST" name="openpage" finished-at="2023-07-21T18:23:23 IST" duration-ms="14471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openpage -->
+        <test-method is-config="true" signature="EnterLoginDetails()[pri:0, instance:OrangeHRM_TestPKG.TestClass@3e8c3cb]" started-at="2023-07-21T18:23:23 IST" name="EnterLoginDetails" finished-at="2023-07-21T18:23:25 IST" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterLoginDetails -->
+        <test-method signature="Validate_Dashboard_Leave()[pri:0, instance:OrangeHRM_TestPKG.TestClass@3e8c3cb]" started-at="2023-07-21T18:23:25 IST" name="Validate_Dashboard_Leave" finished-at="2023-07-21T18:23:35 IST" duration-ms="10693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Dashboard_Leave -->
+      </class> <!-- OrangeHRM_TestPKG.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
