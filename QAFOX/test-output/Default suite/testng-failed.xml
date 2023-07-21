@@ -7,8 +7,7 @@
         <methods>
           <include name="closewindow"/>
           <include name="OpenLoginPage"/>
-          <include name="Login_and_validate_components_Add_Item_To_Cart_and_try_checkout" invocation-numbers="0"/>
-          <include name="logout"/>
+          <include name="Login_and_validate_Camera"/>
         </methods>
       </class> <!-- QAFOX_Project_TEST_PKG.TestClass -->
     </classes>

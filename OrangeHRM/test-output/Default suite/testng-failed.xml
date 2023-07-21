@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="QAFOX_Project_TEST_PKG.TestClass">
+      <class name="OrangeHRM_TestPKG.TestClass">
         <methods>
-          <include name="closewindow"/>
-          <include name="OpenLoginPage"/>
-          <include name="Login_and_validate_Camera"/>
+          <include name="openpage"/>
+          <include name="EnterLoginDetails"/>
+          <include name="close_Window"/>
+          <include name="Validate_Dashboard_Leave"/>
         </methods>
-      </class> <!-- QAFOX_Project_TEST_PKG.TestClass -->
+      </class> <!-- OrangeHRM_TestPKG.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

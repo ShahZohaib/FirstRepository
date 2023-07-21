@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import QAFOX_Project_Driver_PKG.DriverClass;
 
-public class Dashboard extends DriverClass {
+public class Dashboard_Component extends DriverClass {
 	public static Select s;
 	static JavascriptExecutor js = (JavascriptExecutor) d;
 	static Actions a = new Actions(d);
