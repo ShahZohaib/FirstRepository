@@ -3,10 +3,9 @@ package QAFOX_Project_Validation_PKG;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import QAFOX_Project_XPATH_PKG.Dashboard_Component;
 
-import QAFOX_Project_XPATH_PKG.Dashboard;
-
-public class QAFOX_Validation {
+public class QAFOX_Validation_component {
 	public static void Validate_Data(boolean b) throws Exception
 	{
 		if(!b)
@@ -76,7 +75,7 @@ public class QAFOX_Validation {
 	}
 	public static void check_list_equal(String act) throws Exception
 	{
-		List<WebElement>li = Dashboard.s.getAllSelectedOptions();
+		List<WebElement>li = Dashboard_Component.s.getAllSelectedOptions();
 		  for(WebElement e:li)
 		  {
 			  String s = e.getText();
