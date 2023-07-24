@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-19T11:19:15 IST" name="Default suite" finished-at="2023-07-19T11:19:22 IST" duration-ms="7511">
+  <suite started-at="2023-07-24T11:01:26 IST" name="Default suite" finished-at="2023-07-24T11:01:48 IST" duration-ms="22464">
     <groups>
     </groups>
-    <test started-at="2023-07-19T11:19:15 IST" name="Default test" finished-at="2023-07-19T11:19:22 IST" duration-ms="7511">
-      <class name="QAFOX_Project.ComponentPageTestClass">
-        <test-method is-config="true" signature="OpenLoginPage()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-19T11:19:15 IST" name="OpenLoginPage" finished-at="2023-07-19T11:19:20 IST" duration-ms="5384" status="PASS">
+    <test started-at="2023-07-24T11:01:26 IST" name="Default test" finished-at="2023-07-24T11:01:48 IST" duration-ms="22464">
+      <class name="Action_Class.ActionClassMouseOver">
+        <test-method is-config="true" signature="OpenPage()[pri:0, instance:Action_Class.ActionClassMouseOver@55a147cc]" started-at="2023-07-24T11:01:26 IST" name="OpenPage" finished-at="2023-07-24T11:01:45 IST" duration-ms="18995" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenLoginPage -->
-        <test-method is-config="true" signature="Enter_LoginDetails()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-19T11:19:20 IST" name="Enter_LoginDetails" finished-at="2023-07-19T11:19:21 IST" duration-ms="898" status="PASS">
+        </test-method> <!-- OpenPage -->
+        <test-method signature="mouseover()[pri:0, instance:Action_Class.ActionClassMouseOver@55a147cc]" started-at="2023-07-24T11:01:45 IST" name="mouseover" finished-at="2023-07-24T11:01:48 IST" duration-ms="3401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Enter_LoginDetails -->
-        <test-method signature="Login_and_validate_components()[pri:0, instance:QAFOX_Project.ComponentPageTestClass@5d0bf09b]" started-at="2023-07-19T11:19:21 IST" name="Login_and_validate_components" finished-at="2023-07-19T11:19:22 IST" duration-ms="1177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_and_validate_components -->
-      </class> <!-- QAFOX_Project.ComponentPageTestClass -->
+        </test-method> <!-- mouseover -->
+      </class> <!-- Action_Class.ActionClassMouseOver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

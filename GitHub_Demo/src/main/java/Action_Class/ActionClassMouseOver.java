@@ -29,9 +29,9 @@ public class ActionClassMouseOver extends DriverClass{
 		a.click(e).perform();
 	}
 	
-	@AfterMethod
-	public void close_page()
-	{
-		d.close();
-	}
+//	@AfterMethod
+//	public void close_page()
+//	{
+//		d.close();
+//	}
 }
