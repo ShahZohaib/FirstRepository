@@ -15,7 +15,7 @@ public class Dashboard_Leave extends DriverClass {
 	private static By by_emp_name = By.xpath("//input[@placeholder=\"Type for hints...\"]");
 	private static By by_leave_type = By.xpath("//div[@class=\"oxd-select-text-input\" and text()='-- Select --']");
 	
-/////WEBELEMENTS
+////////////////////////////WEBELEMENTS//////////////////////////////////////////
 	public static List<WebElement> all_search_icons()
 	{
 		return d.findElements(by_search_all_icons);
@@ -36,8 +36,8 @@ public class Dashboard_Leave extends DriverClass {
 	{
 		return d.findElement(by_emp_name);
 	}
-	//////Actions
 	
+//////////////////////////////////Actions///////////////////////////////////////
 	public static void click_on_search_element(String ele_name)
 	{
 		List<WebElement> li = all_search_icons();
@@ -51,7 +51,9 @@ public class Dashboard_Leave extends DriverClass {
 			}
 		}
 	}
-	public static void click_on_navbar_element(String ele_name)
+	
+	
+	public static void click_on_navbar_element(String ele_name)	
 	{
 		List<WebElement> li = all_navbar_icons();
 		for(WebElement e : li)
@@ -64,18 +66,21 @@ public class Dashboard_Leave extends DriverClass {
 			}
 		}
 	}
+	
 	public static void click_on_leave_type()
 	{
 		go_to_leave_type().click();
 	}
+	
 	public static void enter_name_emp_field(String name) throws InterruptedException
 	{
-		//a.click(go_to_emp_name_field()).perform();
+		
 	   go_to_emp_name_field().click();
-	   go_to_emp_name_field().sendKeys(name);
-	   Thread.sleep(3000);
-	   go_to_emp_name_field().sendKeys(Keys.ARROW_DOWN );
-	   Thread.sleep(3000);
-	   go_to_emp_name_field().sendKeys(Keys.ENTER);
+	   
+//	   go_to_emp_name_field().sendKeys(name);
+//	   Thread.sleep(3000);
+//	   go_to_emp_name_field().sendKeys(Keys.ARROW_DOWN );
+//	   Thread.sleep(3000);
+//	   go_to_emp_name_field().sendKeys(Keys.ENTER);
 	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="QAFOX_Project.ComponentPageTestClass">
+      <class name="Action_Class.ActionClassMouseOver">
         <methods>
-          <include name="Enter_LoginDetails"/>
-          <include name="Login_and_validate_components"/>
-          <include name="OpenLoginPage"/>
+          <include name="OpenPage"/>
+          <include name="close_page"/>
+          <include name="mouseover"/>
         </methods>
-      </class> <!-- QAFOX_Project.ComponentPageTestClass -->
+      </class> <!-- Action_Class.ActionClassMouseOver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
