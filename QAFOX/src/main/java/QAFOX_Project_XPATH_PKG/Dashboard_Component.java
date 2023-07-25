@@ -24,8 +24,8 @@ public class Dashboard_Component extends DriverClass {
 	private static By by_nav_bar = By.xpath("//ul[@class=\"nav navbar-nav\"]//li");
 	private static By by_monitos_text = By.xpath("//h2[text()='Monitors']");
 	private static By by_success = By.xpath("//div[text()='Success: You have added ']");
-	private static By by_samsung_item = By.xpath("//div[@class=\"caption\"]//a[text()='Samsung SyncMaster 941BW']");
-	private static By by_Check_img = By.xpath("//a[@title=\"Samsung SyncMaster 941BW\"]");
+	private static By by_samsung_item = By.xpath("//div[@class='caption']//a[text()='Apple Cinema 30\"']");
+	private static By by_Check_img = By.xpath("//h1[text()='Apple Cinema 30\"']");
 	private static By by_quantity = By.xpath("//input[@name=\"quantity\"]");
 	private static By by_all_comp_ele = By.xpath("//li[@class=\"dropdown open\"]//div[@class=\"dropdown-menu\"]");
 	private static By by_add_to_cart_table = By.xpath("//div[@class=\"table-responsive\"]");
@@ -42,6 +42,8 @@ public class Dashboard_Component extends DriverClass {
 	private static By by_check_out = By.xpath("//a[text()='Checkout']");
 	private static By by_after_checkout_msg = By.xpath("//div[@class=\"alert alert-danger alert-dismissible\"]");
 	private static By by_data_displayed = By.xpath("//select[@id='input-sort' and@onchange=\"location = this.value;\"]");
+	private static By by_upload_file = By.xpath("//button[@id=\"button-upload222\"]");
+	
 	///WebElement Methods	
 	
 	public static List<WebElement> all_components_details() {
@@ -147,6 +149,10 @@ public class Dashboard_Component extends DriverClass {
 	{
 		return d.findElement(by_after_checkout_msg);
 	}
+	public static WebElement upload_file()
+	{
+		return d.findElement(by_upload_file);
+	}
 //////////////////////////////////////Actions///////////////////////////////
 
 	public static void Click_on_select_Box(String text) {
@@ -246,6 +252,12 @@ public class Dashboard_Component extends DriverClass {
 	{
 		js.executeScript("window.scrollBy(0,400)", "");
 		go_to_check_out().click();
+	}
+	
+	public static void click_upload_file()
+	{
+		js.executeScript("window.scrollBy(0,400)", "");
+		a.click(upload_file()).perform();
 	}
 	
 }

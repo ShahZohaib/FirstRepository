@@ -1,13 +1,8 @@
 package QAFOX_Project_TEST_PKG;
-
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
-
+import static org.testng.Assert.*;
 import org.testng.annotations.*;
 import QAFOX_Project_Driver_PKG.DriverClass;
 import QAFOX_Project_Validation_PKG.QAFOX_Validation_component;
-import QAFOX_Project_Validation_PKG.Validate_Cameras;
-import QAFOX_Project_XPATH_PKG.Dashboard_Cameras;
 import QAFOX_Project_XPATH_PKG.Dashboard_Component;
 import QAFOX_Project_XPATH_PKG.Login;
 
@@ -35,50 +30,66 @@ public class TestClass
 		Login.Submit_Login();
 		
 	  Dashboard_Component.Click_any_nav_element("Components");
+	  
 //	  QAFOX_Validation_component.Check_element_displayed(Dashboard_Component.all_components_elements().isDisplayed());
-	  assertFalse(!Dashboard_Component.all_components_elements().isDisplayed(), "Component list Displayed");
-//      Dashboard_Component.Click_any_Component("Monitors (2)");
+	  
+	  assertTrue(Dashboard_Component.all_components_elements().isDisplayed(), "Component list not Displayed");
+      
+	  Dashboard_Component.Click_any_Component("Monitors (2)");
+
 //	  QAFOX_Validation_component.Check_msg_displayed(Dashboard_Component.monitor_msg().isDisplayed());
-//		
-//      Dashboard_Component.Click_on_select_Box("Price (High > Low)");
-//      QAFOX_Validation_component.Check_msg_displayed(Dashboard_Component.all_List_elements().isDisplayed());
-//	  Dashboard_Component.Select_item();
+      
+	  assertTrue(Dashboard_Component.monitor_msg().isDisplayed(), "Monitor text not displayed");		
+     
+	  Dashboard_Component.Click_on_select_Box("Price (High > Low)");  
+	  
+//  QAFOX_Validation_component.Check_msg_displayed(Dashboard_Component.all_List_elements().isDisplayed());
+	  
+	  assertTrue(Dashboard_Component.all_List_elements().isDisplayed(),"Selected Element is not displayed");
+      
+	  
+	  Dashboard_Component.Select_item();
+
 //	  QAFOX_Validation_component.Check_img_displayed(Dashboard_Component.Check_img_Displayed().isDisplayed());
-//		
-//	  Dashboard_Component.Enter_Quantity("2");
-//	  String actual_value = "2";
-//	  String exp_value=Dashboard_Component.Select_Quantity().getAttribute("value");
-//	  QAFOX_Validation_component.check_equal(actual_value, exp_value);
-//		
-//	  Dashboard_Component.Click_AddTo_Cart();
+       assertTrue(Dashboard_Component.Check_img_Displayed().isDisplayed(), "Mobile image not displayed");	
+      Dashboard_Component.Enter_Quantity("2");
+	  String actual_value = "2";
+      String exp_value=Dashboard_Component.Select_Quantity().getAttribute("value");
+//QAFOX_Validation_component.check_equal(actual_value, exp_value); 
+      assertEquals(actual_value, exp_value, "Quantity is not same");
+
+ 	  Dashboard_Component.Click_AddTo_Cart();
 //	  QAFOX_Validation_component.Check_msg_displayed(Dashboard_Component.success_msg().isDisplayed());
-//	  
+      assertTrue(Dashboard_Component.success_msg().isDisplayed(),"Success msg not displayed");	  
 //	  Thread.sleep(3000);
-//	  Dashboard_Component.click_items();
+	  Dashboard_Component.click_items();
 //	  QAFOX_Validation_component.Check_table_displayed(Dashboard_Component.go_to_view_cart().isDisplayed());
-//	  Dashboard_Component.click_on_view_cart();
+      assertTrue(Dashboard_Component.go_to_view_cart().isDisplayed(),"Cart Details");
+      
+	  Dashboard_Component.click_on_view_cart();
 //	  QAFOX_Validation_component.Check_table_displayed(Dashboard_Component.cart_table().isDisplayed());
-//	  
-//	  Thread.sleep(3000);
-//	  Dashboard_Component.click_estimate_icon();
+	  assertTrue(Dashboard_Component.cart_table().isDisplayed(),"Selected Item Details not Displayed");
+	  Thread.sleep(3000);
+	  Dashboard_Component.click_estimate_icon();
 //	  QAFOX_Validation_component.Check_table_displayed(Dashboard_Component.ship_details().isDisplayed());
-//	  Thread.sleep(3000);
-//	  
-//	  Dashboard_Component.enter_country_name("Australia");
-//	  QAFOX_Validation_component.check_list_equal("Australia");
-//	  
-//	  Thread.sleep(3000);
-//	  Dashboard_Component.enter_state_name("Western Australia");
-//	  QAFOX_Validation_component.check_list_equal("Western Australia");
-//      Dashboard_Component.enter_pin_code("123");
-//      String act_pin = "123";
-//      String exp_pin = Dashboard_Component.select_pincode().getAttribute("value");
-//      
+	  assertTrue(Dashboard_Component.ship_details().isDisplayed(), "Shipping details not visible");
+	   Thread.sleep(3000);
+	  	 
+	  Dashboard_Component.enter_country_name("Australia");
+	  QAFOX_Validation_component.check_list_equal("Australia");
+	  
+	  Thread.sleep(3000);
+	  Dashboard_Component.enter_state_name("Western Australia");
+	  QAFOX_Validation_component.check_list_equal("Western Australia");
+      Dashboard_Component.enter_pin_code("123");
+      String act_pin = "123";
+      String exp_pin = Dashboard_Component.select_pincode().getAttribute("value");
+      assertEquals(act_pin, exp_pin,"Pin is different");
 //      QAFOX_Validation_component.check_equal(act_pin, exp_pin);
-//      
-//      Dashboard_Component.click_get_quotes();
+      
+     Dashboard_Component.click_get_quotes();
 //      QAFOX_Validation_component.Check_table_displayed(Dashboard_Component.After_click_on_get_qoutes_box_displayed().isDisplayed());
-//      
+      assertTrue(Dashboard_Component.After_click_on_get_qoutes_box_displayed().isDisplayed(),"Quote box not displayed");
 //      Dashboard_Component.click_radio_button();
 //      QAFOX_Validation_component.check_Clicked(Dashboard_Component.Go_to_radio_button().isSelected());
 //      
@@ -111,7 +122,7 @@ public class TestClass
 //		Login.click_on_myaccount();
 //		Login.click_on_logout();
 //	}
-	@AfterClass
+	@AfterClass(enabled=false)
 	public void closewindow()
 	{
 		DriverClass.d.quit();
