@@ -27,12 +27,13 @@ public class TestClass {
 	@Test
 	public void Validate_Dashboard_Leave() throws Exception 
 	{
-	  Dashboard_Leave.click_on_search_element("Leave");
-	//  ValidationClass.Validate_text_msg_visible(Dashboard_Leave.leave_text_visible().isDisplayed());
-	////	assertEquals(Dashboard_Leave.leave_text_visible().isDisplayed(), );
-		assertTrue(Dashboard_Leave.leave_text_visible().isDisplayed(), "Text visible");
-//	  Dashboard_Leave.click_on_navbar_element("Assign leave");
-//		
+	Dashboard_Leave.click_on_search_element("Leave");
+	assertTrue(Dashboard_Leave.leave_text_visible().isDisplayed(), "Leave Text Not Displayed");
+	
+    Dashboard_Leave.click_on_navbar_element("Assign leave");
+    assertTrue(Dashboard_Leave.check_assign_leave_text().isDisplayed(), "Assign Text Not Displayed");
+    
+    
 //	  Dashboard_Leave.enter_name_emp_field("Test");		
 	}
 	
