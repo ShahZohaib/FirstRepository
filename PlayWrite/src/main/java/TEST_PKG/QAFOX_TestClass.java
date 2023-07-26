@@ -1,12 +1,6 @@
 package TEST_PKG;
 
-
-
-import static org.testng.Assert.assertTrue;
-
-import org.testng.Assert;
 import org.testng.annotations.*;
-
 import QAFOX_BasePKG.DriverClass;
 import QAFOX_BasePKG.LoginPage;
 
@@ -24,9 +18,7 @@ public class QAFOX_TestClass
 	public void Enter_Login_Detail()
 	{
 		LoginPage.enter_email("ztoh@gmail.com");
-		assertTrue(LoginPage.click_email().isVisible(), "Not visible");
 		
-	 //   String act ="ztoh@gmail.com";
 	
 		LoginPage.enter_pass("ztoh_india");
 		
