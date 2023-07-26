@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-26T14:36:26 IST" name="Default suite" finished-at="2023-07-26T14:36:41 IST" duration-ms="14582">
+  <suite started-at="2023-07-26T15:44:56 IST" name="Default suite" finished-at="2023-07-26T15:45:04 IST" duration-ms="7316">
     <groups>
     </groups>
-    <test started-at="2023-07-26T14:36:26 IST" name="Default test" finished-at="2023-07-26T14:36:41 IST" duration-ms="14582">
+    <test started-at="2023-07-26T15:44:56 IST" name="Default test" finished-at="2023-07-26T15:45:04 IST" duration-ms="7316">
       <class name="TEST_PKG.QAFOX_TestClass">
-        <test-method is-config="true" signature="open_page()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T14:36:26 IST" name="open_page" finished-at="2023-07-26T14:36:39 IST" duration-ms="13026" status="PASS">
+        <test-method is-config="true" signature="open_page()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T15:44:56 IST" name="open_page" finished-at="2023-07-26T15:45:03 IST" duration-ms="6471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_page -->
-        <test-method signature="Enter_Login_Detail()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T14:36:39 IST" name="Enter_Login_Detail" finished-at="2023-07-26T14:36:41 IST" duration-ms="1391" status="PASS">
+        <test-method signature="Enter_Login_Detail()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T15:45:03 IST" name="Enter_Login_Detail" finished-at="2023-07-26T15:45:04 IST" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enter_Login_Detail -->
-        <test-method is-config="true" signature="close_window()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T14:36:41 IST" name="close_window" finished-at="2023-07-26T14:36:41 IST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="close_window()[pri:0, instance:TEST_PKG.QAFOX_TestClass@2af004b]" started-at="2023-07-26T15:45:04 IST" name="close_window" finished-at="2023-07-26T15:45:04 IST" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_window -->

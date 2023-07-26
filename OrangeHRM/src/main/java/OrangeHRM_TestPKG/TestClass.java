@@ -20,6 +20,9 @@ public class TestClass {
 	public void EnterLoginDetails()
 	{
 		LoginPage.enter_id("Admin");
+		String act = "Admin";
+		String exp = LoginPage.user_ele().getAttribute("value");
+		System.out.println(exp);
 		LoginPage.enter_pass("admin123");
 		LoginPage.enter_login();
 	}
@@ -37,7 +40,7 @@ public class TestClass {
 //	  Dashboard_Leave.enter_name_emp_field("Test");		
 	}
 	
-	@AfterClass(enabled = false)
+	@AfterClass
 	public void close_Window()
 	{
 		DriverClass.d.quit();
