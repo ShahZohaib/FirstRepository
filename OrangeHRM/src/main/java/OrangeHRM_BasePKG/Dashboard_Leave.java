@@ -14,7 +14,7 @@ public class Dashboard_Leave extends DriverClass {
 	private static By by_leave_text = By.xpath("//h6[text()='Leave']");
 	private static By by_emp_name = By.xpath("//input[@placeholder=\"Type for hints...\"]");
 	private static By by_leave_type = By.xpath("//div[@class=\"oxd-select-text-input\" and text()='-- Select --']");
-	
+	private static By by_assign_leave_text = By.xpath("//h6[text()='Assign Leave']");
 ////////////////////////////WEBELEMENTS//////////////////////////////////////////
 	public static List<WebElement> all_search_icons()
 	{
@@ -37,6 +37,10 @@ public class Dashboard_Leave extends DriverClass {
 		return d.findElement(by_emp_name);
 	}
 	
+	public static WebElement check_assign_leave_text()
+	{
+		return d.findElement(by_assign_leave_text);
+	}
 //////////////////////////////////Actions///////////////////////////////////////
 	public static void click_on_search_element(String ele_name)
 	{

@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 
 public class LoginPage extends DriverClass {
 	
-static	By user_id = By.xpath("//input[@name=\"username\"]");
+static	By user_id = By.xpath("//input[@name='username']");
 static	By pass = By.xpath("//input[@name='password']");
 static	By submit = By.xpath("//button[@type='submit']");
 static	By click_icon = By.xpath("//span[@class='oxd-userdropdown-tab']");
