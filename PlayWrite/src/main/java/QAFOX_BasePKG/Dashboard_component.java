@@ -32,6 +32,7 @@ public class Dashboard_component extends DriverClass
 	{
 		return p.locator(by_monitor_text);
 	}
+
 ///action
 	public static void click_nav_ele(String ele)
 	{

@@ -45,6 +45,13 @@ public class QAFOX_TestClass
         Thread.sleep(3000);
         assertTrue(Dashboard_component.monitor_page_visible().isVisible(),"Monitor Page not visible");
         Thread.sleep(3000);
+        
+      LoginPage.click_my_account();
+      assertTrue(LoginPage.after_click_on_myAccount().isVisible(), "After click on myAccount dropdown menu right is not visible");
+        Thread.sleep(3000);
+        LoginPage.click_logout();
+        assertTrue(LoginPage.after_logout_msg().isVisible(), "Logout msg not displayed");
+        Thread.sleep(3000);
 	}
 	@Test(priority = 2,enabled=false)
 	public void Validate_login_with_Invalid_credentials()
@@ -58,10 +65,9 @@ public class QAFOX_TestClass
 		assertNotEquals(act_pass,LoginPage.click_pass().inputValue(),"Invalid Pass");
 		
 		LoginPage.enter_login();
-		assertTrue(LoginPage.after_click_login_with_invalid_data().isVisible(),"Test failed with invalid credentials");
-		
+		assertTrue(LoginPage.after_click_login_with_invalid_data().isVisible(),"Test failed with invalid credentials");		
 	}
-	@AfterMethod(enabled=false)
+	@AfterMethod
 	public void close_window()
 	{
 		DriverClass.p.close();
