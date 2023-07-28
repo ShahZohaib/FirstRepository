@@ -11,6 +11,9 @@ public class LoginPage extends DriverClass{
 //	private static String my_account = "//span[text()='My Account']";
 //	private static String logout ="//a[text()='Logout']";
 	
+//////////for validation	
+	private static final String after_login_msg = "//div[@id='content']";
+	private static final String warning_msg = "//div[text()='Warning: No match for E-Mail Address and/or Password.']";
 /////locator
 	
   public static Locator click_email()
@@ -24,6 +27,15 @@ public class LoginPage extends DriverClass{
   public static Locator click_login()
   {
 	  return p.locator(Login);
+  }
+ //////////validation method 
+  public static Locator after_login_accont_detail()
+  {
+	  return p.locator(after_login_msg);
+  }
+  public static Locator after_click_login_with_invalid_data()
+  {
+	  return p.locator(warning_msg);
   }
   //action
   public static void enter_email(String email)
