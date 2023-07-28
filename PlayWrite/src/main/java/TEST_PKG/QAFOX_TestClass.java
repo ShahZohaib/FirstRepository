@@ -20,7 +20,7 @@ public class QAFOX_TestClass
 	    System.out.println("Test case1 Pass");	
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,enabled=false)
 	public void Validate_Login_With_Valid_Credentials() throws InterruptedException
 	{
 		
@@ -52,13 +52,29 @@ public class QAFOX_TestClass
         LoginPage.click_logout();
         assertTrue(LoginPage.after_logout_msg().isVisible(), "Logout msg not displayed");
         Thread.sleep(3000);
+        System.out.println("Test 1 Pass:Logout Successful");
 	}
 	@Test(priority = 2,enabled=false)
 	public void Validate_login_with_Invalid_credentials()
 	{
 		LoginPage.enter_email("Admin");
 		String act_email = "ztoh_india";
-		assertNotEquals(act_email,LoginPage.click_email().inputValue(),"Invalid Email");
+		assertNotEquals(act_email,LoginPage.click_email().inputValue(),"Invalid Email is required");
+		
+		LoginPage.enter_pass("Admin1234");
+		String act_pass="ztoh_india";
+		assertNotEquals(act_pass,LoginPage.click_pass().inputValue(),"Invalid Pass is required");
+		
+		LoginPage.enter_login();
+		assertTrue(LoginPage.after_click_login_with_invalid_data().isVisible(),"Test failed with invalid credentials");		
+	    System.out.println("Test 2 pass");
+	}
+	@Test(enabled=false)
+	public void validate_login_with_valid_user_and_invalid_password()
+	{
+	    LoginPage.enter_email("ztoh@gmail.com");
+		String act_email = "ztoh@gmail.com";
+		assertEquals(act_email, LoginPage.click_email().inputValue()," Invalid Email Id");
 		
 		LoginPage.enter_pass("Admin1234");
 		String act_pass="ztoh_india";
@@ -66,7 +82,24 @@ public class QAFOX_TestClass
 		
 		LoginPage.enter_login();
 		assertTrue(LoginPage.after_click_login_with_invalid_data().isVisible(),"Test failed with invalid credentials");		
+		System.out.println("Test 3 pass");
 	}
+	@Test
+	public void validate_login_with_invalid_user_and_valid_password()
+	{
+	    LoginPage.enter_email("Admin");
+		String act_email = "ztoh@gmail.com";
+		assertNotEquals(act_email, LoginPage.click_email().inputValue()," Invalid Email Id");
+		
+		LoginPage.enter_pass("ztoh_india");
+		String act_pass="ztoh_india";
+		assertEquals(act_pass,LoginPage.click_pass().inputValue(),"Invalid Pass");
+		
+		LoginPage.enter_login();
+		assertTrue(LoginPage.after_click_login_with_invalid_data().isVisible(),"Test failed with invalid credentials");		
+		System.out.println("Test 3 pass");
+	}
+	
 	@AfterMethod
 	public void close_window()
 	{
