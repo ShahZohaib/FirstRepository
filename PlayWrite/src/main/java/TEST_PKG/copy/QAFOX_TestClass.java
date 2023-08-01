@@ -1,4 +1,4 @@
-package TEST_PKG;
+package TEST_PKG.copy;
 
 import static org.testng.Assert.*;
 

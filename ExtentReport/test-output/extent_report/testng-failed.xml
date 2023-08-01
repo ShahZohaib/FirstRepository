@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [extent_report]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="report(failed)">
+    <classes>
+      <class name="TestPage.Dashboard_Test">
+        <methods>
+          <include name="save_data"/>
+          <include name="bc"/>
+          <include name="bf"/>
+          <include name="Valid_dashboard_admin"/>
+          <include name="Valid_dashboard_leave"/>
+          <include name="Valid_dashboard_time"/>
+          <include name="Open_Extent_report"/>
+        </methods>
+      </class> <!-- TestPage.Dashboard_Test -->
+    </classes>
+  </test> <!-- report(failed) -->
+</suite> <!-- Failed suite [extent_report] -->
