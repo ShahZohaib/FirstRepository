@@ -6,7 +6,7 @@ public class TestClass {
 	@BeforeClass
 	public void openLogin()
 	{
-		DriverClass.driver();
+		DriverClass.driver("");
 	}
 	@Test
 	public void enter_login_details()

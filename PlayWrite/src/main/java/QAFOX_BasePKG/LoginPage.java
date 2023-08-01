@@ -1,5 +1,6 @@
 package QAFOX_BasePKG;
 
+
 import com.microsoft.playwright.Locator;
 
 public class LoginPage extends DriverClass{
@@ -7,9 +8,14 @@ public class LoginPage extends DriverClass{
 	private static final String email = "//input[@id='input-email']";
 	private	static final String password = "//input[@id='input-password']";
 	private	static final String Login = "//input[@type='submit']";
-//	private	static String Invalid_or_Empty__Field = "//div[text()='Warning: No match for E-Mail Address and/or Password.']";
-//	private static String my_account = "//span[text()='My Account']";
-//	private static String logout ="//a[text()='Logout']";
+	private static final String my_account = "//span[text()='My Account']";
+	private static final String logout ="//a[text()='Logout']";
+	
+//////////for validation	
+	private static final String after_login_msg = "//div[@id='content']";
+	private static final String warning_msg = "//div[text()='Warning: No match for E-Mail Address and/or Password.']";
+	private static final String by_myAccount_details = "//ul[@class='dropdown-menu dropdown-menu-right']";
+	private static final String by_after_logout_msg = "//div[@id=\"content\"]//p[text()='You have been logged off your account. It is now safe to leave the computer.']";
 	
 /////locator
 	
@@ -25,6 +31,31 @@ public class LoginPage extends DriverClass{
   {
 	  return p.locator(Login);
   }
+  public static Locator go_my_account()
+  {
+	  return p.locator(my_account);
+  }
+  public static Locator move_to_logout()
+  {
+	  return p.locator(logout);
+  }
+ //////////validation method 
+  public static Locator after_login_accont_detail()
+  {
+	  return p.locator(after_login_msg);
+  }
+  public static Locator after_click_login_with_invalid_data()
+  {
+	  return p.locator(warning_msg);
+  }
+  public static Locator after_click_on_myAccount()
+	{
+		return p.locator(by_myAccount_details);
+	}
+  public static Locator after_logout_msg()
+  {
+	  return p.locator(by_after_logout_msg);
+  }
   //action
   public static void enter_email(String email)
   {
@@ -39,6 +70,14 @@ public class LoginPage extends DriverClass{
   public static void enter_login()
   {
 	  click_login().click();
+  }
+  public static void click_my_account()
+  {
+	  go_my_account().click();
+  }
+  public static void click_logout()
+  {
+	  move_to_logout().click();
   }
   
 

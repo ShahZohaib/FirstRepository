@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="extent_report">
+	<test name="report">
+		<classes>
+			<class name="TestPage.LoginPage_Test"></class>
+			<class name="TestPage.Dashboard_Test"></class>
+			
+		</classes>
+	</test>
+</suite>

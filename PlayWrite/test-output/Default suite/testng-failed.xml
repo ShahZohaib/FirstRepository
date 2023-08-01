@@ -6,8 +6,8 @@
       <class name="TEST_PKG.QAFOX_TestClass">
         <methods>
           <include name="open_page"/>
+          <include name="Validate_Login_With_Valid_Credentials"/>
           <include name="close_window"/>
-          <include name="Enter_Login_Detail"/>
         </methods>
       </class> <!-- TEST_PKG.QAFOX_TestClass -->
     </classes>
