@@ -1,9 +1,29 @@
 package QAFOX_BasePKG;
 
 
+import java.lang.reflect.Method;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
 import com.microsoft.playwright.Locator;
 
 public class LoginPage extends DriverClass{
+	
+	@BeforeClass
+	public void bc()
+	{
+		Test1 = report.createTest("Login_Xpath");
+	}
+	@BeforeMethod
+	public void bm(Method m)
+	{
+		Test2 = Test1.createNode(m.getName());
+	}
+	
+	
+	
+	
 //selector	
 	private static final String email = "//input[@id='input-email']";
 	private	static final String password = "//input[@id='input-password']";
@@ -61,15 +81,20 @@ public class LoginPage extends DriverClass{
   {
 	  click_email().click();
 	  click_email().type(email);
+	  Test2.info("Email id entered successfully");
   }
   public static void enter_pass(String pass)
   {
 	  click_pass().click();
 	  click_pass().type(pass);
+	  Test2.info("Password entered successfully");
+
   }
   public static void enter_login()
   {
 	  click_login().click();
+	  Test2.info("Login Button Clicked successfully");
+
   }
   public static void click_my_account()
   {

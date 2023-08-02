@@ -13,26 +13,26 @@ public class LoginPage_XPaths extends BasePage_Driver
 	@BeforeClass
 	public void bc()
 	{
-		er = report.createTest("LoginPage");
+		Test1 = report.createTest("LoginPage");
 	}
 	@BeforeMethod
 	public void bf(Method m)
 	{
-		e= er.createNode(m.getName());
+		Test2= Test1.createNode(m.getName());
 	}
 	
 	public static void Enter_User_name()
 	{
-		e.info("User name entered successfully");
+		Test2.info("User name entered successfully");
 	}
 	
 	public static void Enter_password()
 	{
-		e.info("Password Entered successfully");
+		Test2.info("Password Entered successfully");
 	}
 	
 	public static void Enter_login()
 	{
-		e.info("Login Button clicked successfully");
+		Test2.info("Login Button clicked successfully");
 	}
 }

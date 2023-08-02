@@ -2,24 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-28T18:40:13 IST" name="Default suite" finished-at="2023-07-28T18:40:28 IST" duration-ms="15236">
+  <suite started-at="2023-08-02T18:57:15 IST" name="Default suite" finished-at="2023-08-02T18:57:57 IST" duration-ms="42312">
     <groups>
     </groups>
-    <test started-at="2023-07-28T18:40:13 IST" name="Default test" finished-at="2023-07-28T18:40:28 IST" duration-ms="15236">
-      <class name="TEST_PKG.QAFOX_TestClass">
-        <test-method is-config="true" signature="open_page()[pri:0, instance:TEST_PKG.QAFOX_TestClass@1a6d8329]" started-at="2023-07-28T18:40:13 IST" name="open_page" finished-at="2023-07-28T18:40:27 IST" duration-ms="14213" status="PASS">
+    <test started-at="2023-08-02T18:57:15 IST" name="Default test" finished-at="2023-08-02T18:57:57 IST" duration-ms="42312">
+      <class name="TEST_PKG.QAFOX_Dashboard_page_TestClass">
+        <test-method is-config="true" signature="bs()[pri:0, instance:TEST_PKG.QAFOX_Dashboard_page_TestClass@663c9e7a]" started-at="2023-08-02T18:57:14 IST" name="bs" finished-at="2023-08-02T18:57:15 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method is-config="true" signature="open_page()[pri:0, instance:TEST_PKG.QAFOX_Dashboard_page_TestClass@663c9e7a]" started-at="2023-08-02T18:57:15 IST" name="open_page" finished-at="2023-08-02T18:57:30 IST" duration-ms="15837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_page -->
-        <test-method signature="validate_login_with_valid_user_and_invalid_password()[pri:0, instance:TEST_PKG.QAFOX_TestClass@1a6d8329]" started-at="2023-07-28T18:40:27 IST" name="validate_login_with_valid_user_and_invalid_password" finished-at="2023-07-28T18:40:28 IST" duration-ms="897" status="PASS">
+        <test-method is-config="true" signature="bm(java.lang.reflect.Method)[pri:0, instance:TEST_PKG.QAFOX_Dashboard_page_TestClass@663c9e7a]" started-at="2023-08-02T18:57:30 IST" name="bm" finished-at="2023-08-02T18:57:30 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TEST_PKG.QAFOX_Dashboard_page_TestClass.validate_componenet_with_valid_credentials() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_login_with_valid_user_and_invalid_password -->
-        <test-method is-config="true" signature="close_window()[pri:0, instance:TEST_PKG.QAFOX_TestClass@1a6d8329]" started-at="2023-07-28T18:40:28 IST" name="close_window" finished-at="2023-07-28T18:40:28 IST" duration-ms="56" status="PASS">
+        </test-method> <!-- bm -->
+        <test-method signature="validate_componenet_with_valid_credentials()[pri:0, instance:TEST_PKG.QAFOX_Dashboard_page_TestClass@663c9e7a]" started-at="2023-08-02T18:57:30 IST" name="validate_componenet_with_valid_credentials" finished-at="2023-08-02T18:57:57 IST" duration-ms="26421" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close_window -->
-      </class> <!-- TEST_PKG.QAFOX_TestClass -->
+        </test-method> <!-- validate_componenet_with_valid_credentials -->
+        <test-method is-config="true" signature="Save_Data()[pri:0, instance:TEST_PKG.QAFOX_Dashboard_page_TestClass@663c9e7a]" started-at="2023-08-02T18:57:57 IST" name="Save_Data" finished-at="2023-08-02T18:57:57 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Save_Data -->
+      </class> <!-- TEST_PKG.QAFOX_Dashboard_page_TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

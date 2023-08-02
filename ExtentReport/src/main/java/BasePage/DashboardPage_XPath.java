@@ -11,26 +11,26 @@ public class DashboardPage_XPath extends BasePage_Driver
     @BeforeClass
 	public void bc()
 	{
-		BasePage_Driver.er = report.createTest("LoginPageTest");
+		BasePage_Driver.Test1 = report.createTest("LoginPageTest");
 	}
 	@BeforeMethod
 	public void bf(Method m)
 	{
-		BasePage_Driver.e= BasePage_Driver.er.createNode(m.getName());
+		BasePage_Driver.Test2= BasePage_Driver.Test1.createNode(m.getName());
 	}
 
 	public static void Click_on_Admin()
 	{
-		e.info("Click_on_Admin successful");
+		Test2.info("Click_on_Admin successful");
 	}
 	
 	public static void click_on_time()
 	{
-		e.info("clicked_on_time ");
+		Test2.info("clicked_on_time ");
 	}
 	
 	public static void click_on_Leave()
 	{
-		e.info("Clicked on leave successfully");
+		Test2.info("Clicked on leave successfully");
 	}
 }
