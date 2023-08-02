@@ -11,8 +11,8 @@ public class BasePage_Driver
 {
 	public static ExtentSparkReporter esr;
 	public static ExtentReports report;
-	public static ExtentTest er;
-	public static ExtentTest e;
+	public static ExtentTest Test1;
+	public static ExtentTest Test2;
 	@BeforeSuite
 	public static void Open_Extent_report()
 	{

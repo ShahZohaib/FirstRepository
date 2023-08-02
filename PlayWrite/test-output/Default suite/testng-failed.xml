@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TEST_PKG.QAFOX_TestClass">
+      <class name="TEST_PKG.QAFOX_Dashboard_page_TestClass">
         <methods>
+          <include name="validate_componenet_with_valid_credentials"/>
           <include name="open_page"/>
-          <include name="Validate_Login_With_Valid_Credentials"/>
-          <include name="close_window"/>
+          <include name="bm"/>
+          <include name="Save_Data"/>
+          <include name="bs"/>
         </methods>
-      </class> <!-- TEST_PKG.QAFOX_TestClass -->
+      </class> <!-- TEST_PKG.QAFOX_Dashboard_page_TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,10 @@
 package OrangeHRM_BasePKG;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 public class LoginPage extends DriverClass {
 	
@@ -15,6 +19,18 @@ static	By forget_pass= By.xpath("//p[text()='Forgot your password? ']");
 static	By invalid_msg = By.xpath("//p[text()='Invalid credentials']");
 static	By required_msg = By.xpath("//span[text()='Required' and @class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']");
 	
+
+       @BeforeClass
+    public void bc()
+    {
+    	   Test1 = report.createTest("OrangeHRM_LoginXpath");
+    }
+       @BeforeMethod
+       public void bf(Method m)
+       {
+    	   Test2 = Test1.createNode(m.getName());
+       }
+
 	public static WebElement user_ele()
 	{
 		WebElement user = d.findElement(user_id);
@@ -23,7 +39,9 @@ static	By required_msg = By.xpath("//span[text()='Required' and @class='oxd-text
 	public static void enter_id(String getid)
 	{
 		user_ele().click();
-		user_ele().sendKeys(getid);		
+		user_ele().sendKeys(getid);	
+		Test2.info("UserName Entered Successfully");
+		
 	}	
 	public static WebElement pass_ele()
 	{
@@ -34,8 +52,9 @@ static	By required_msg = By.xpath("//span[text()='Required' and @class='oxd-text
 	{
 		pass_ele().click();
 		pass_ele().sendKeys(getpass);	
+		Test2.info("Password Entered Successfully");
 	}
-	public   static WebElement login_ele()
+	public static WebElement login_ele()
 	{
 		WebElement login = d.findElement(submit);
 		return login;		
@@ -43,6 +62,7 @@ static	By required_msg = By.xpath("//span[text()='Required' and @class='oxd-text
 	public static void enter_login()
 	{
 	  login_ele().click();	
+	  Test2.info("Login Button Entered Successfully");
 	}
 	
 	public static WebElement icon()
