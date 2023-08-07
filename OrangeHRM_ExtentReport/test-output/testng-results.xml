@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-04T18:49:09 IST" name="Default suite" finished-at="2023-08-04T18:49:37 IST" duration-ms="27828">
+    <groups>
+    </groups>
+    <test started-at="2023-08-04T18:49:09 IST" name="Default test" finished-at="2023-08-04T18:49:37 IST" duration-ms="27828">
+      <class name="TestClasses.OrangeHRM_TestCases">
+        <test-method is-config="true" signature="Extent_Report()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:09 IST" name="Extent_Report" finished-at="2023-08-04T18:49:09 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Extent_Report -->
+        <test-method is-config="true" signature="bc()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:09 IST" name="bc" finished-at="2023-08-04T18:49:09 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bc -->
+        <test-method is-config="true" signature="bm(java.lang.reflect.Method)[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:09 IST" name="bm" finished-at="2023-08-04T18:49:22 IST" duration-ms="12873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestClasses.OrangeHRM_TestCases.Validate_With_Vaild_Credentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="Validate_With_Vaild_Credentials()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:22 IST" name="Validate_With_Vaild_Credentials" finished-at="2023-08-04T18:49:24 IST" duration-ms="2382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_With_Vaild_Credentials -->
+        <test-method is-config="true" signature="close_Window()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:24 IST" name="close_Window" finished-at="2023-08-04T18:49:24 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Window -->
+        <test-method is-config="true" signature="bm(java.lang.reflect.Method)[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:24 IST" name="bm" finished-at="2023-08-04T18:49:35 IST" duration-ms="10348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestClasses.OrangeHRM_TestCases.Validate_invalid_credentials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="Validate_invalid_credentials()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:35 IST" name="Validate_invalid_credentials" finished-at="2023-08-04T18:49:37 IST" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_invalid_credentials -->
+        <test-method is-config="true" signature="close_Window()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:37 IST" name="close_Window" finished-at="2023-08-04T18:49:37 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Window -->
+        <test-method is-config="true" signature="save_report()[pri:0, instance:TestClasses.OrangeHRM_TestCases@7ef82753]" started-at="2023-08-04T18:49:37 IST" name="save_report" finished-at="2023-08-04T18:49:37 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- save_report -->
+      </class> <!-- TestClasses.OrangeHRM_TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
